@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="676" height="279" viewBox="0 0 676 279">
+<rect width="100%" height="100%" rx="10" fill="#1e1e2e"/>
+<rect width="100%" height="30" rx="10" fill="#313244"/>
+<rect y="20" width="100%" height="10" fill="#313244"/>
+<circle cx="18" cy="15" r="6" fill="#f38ba8"/>
+<circle cx="38" cy="15" r="6" fill="#f9e2af"/>
+<circle cx="58" cy="15" r="6" fill="#a6e3a1"/>
+<text x="338" y="20" fill="#bac2de" font-size="13" text-anchor="middle" font-family="PingFang SC, Helvetica, sans-serif">正确时序：hook 挂好后再登录 → 25/26</text>
+<text x="18" y="62" fill="#89dceb" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">$ sudo ./wx key extract --hook-seconds 240</text>
+<text x="18" y="81" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">WeChat PID: 61090</text>
+<rect x="12" y="85" width="652" height="19" rx="3" fill="#f9e2af" fill-opacity="0.14"/>
+<text x="18" y="100" fill="#a6e3a1" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">内存扫描完成：x'hex' 候选 0 个，salt 邻接候选 0 个   # =0 → 扫描时确实还没登录</text>
+<text x="18" y="119" fill="#f9e2af" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">仍有 16 个数据库未匹配密钥，启动 LLDB hook 240s…</text>
+<text x="18" y="138" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">LLDB: lldb -p 61090 （等待 240s，到期自动 detach）</text>
+<text x="18" y="157" fill="#7f849c" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve"># ←—— 此时才点「登录」</text>
+<text x="18" y="176" fill="#f9e2af" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">LLDB 超时，尝试终止…</text>
+<rect x="12" y="180" width="652" height="19" rx="3" fill="#f9e2af" fill-opacity="0.14"/>
+<text x="18" y="195" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">LLDB hook 捕获到 33 个 32-byte key</text>
+<rect x="12" y="199" width="652" height="19" rx="3" fill="#f9e2af" fill-opacity="0.14"/>
+<text x="18" y="214" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">最终匹配到 25/26 个数据库密钥</text>
+<text x="18" y="233" fill="#f9e2af" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">[wx] 警告：仍有 1 个加密 DB 没有密钥（其中 0 个影响聊天完整性）：</text>
+<text x="18" y="252" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">  - migrate/unspportmsg.db (76.0KB)</text>
+</svg>

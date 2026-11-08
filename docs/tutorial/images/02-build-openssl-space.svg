@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="848" height="203" viewBox="0 0 848 203">
+<rect width="100%" height="100%" rx="10" fill="#1e1e2e"/>
+<rect width="100%" height="30" rx="10" fill="#313244"/>
+<rect y="20" width="100%" height="10" fill="#313244"/>
+<circle cx="18" cy="15" r="6" fill="#f38ba8"/>
+<circle cx="38" cy="15" r="6" fill="#f9e2af"/>
+<circle cx="58" cy="15" r="6" fill="#a6e3a1"/>
+<text x="424" y="20" fill="#bac2de" font-size="13" text-anchor="middle" font-family="PingFang SC, Helvetica, sans-serif">坑 2：OpenSSL 构建失败（路径含空格）</text>
+<text x="18" y="62" fill="#89dceb" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">$ cargo build --release      # 项目放在 "/Users/you/Wechat Data/" 下</text>
+<text x="18" y="81" fill="#f38ba8" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">error: failed to run custom build command for `openssl-sys v0.9.112`</text>
+<rect x="12" y="85" width="824" height="19" rx="3" fill="#f9e2af" fill-opacity="0.14"/>
+<text x="18" y="100" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">  cp: Data/wx-cli-runtime/target/release/build/openssl-sys-.../OpenSSLConfig.cmake: Not a directory</text>
+<text x="18" y="119" fill="#f38ba8" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">  make: *** [install_dev] Error 1</text>
+<text x="18" y="138" fill="#f38ba8" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">  Error installing OpenSSL:</text>
+<text x="18" y="157" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">      'make' reported failure with exit status: 2</text>
+<text x="18" y="176" fill="#7f849c" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve"># 解决：CARGO_TARGET_DIR=$HOME/wx-cli-build（不含空格的路径）</text>
+</svg>

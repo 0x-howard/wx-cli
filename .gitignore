@@ -1,0 +1,37 @@
+# Decrypted databases and keys - NEVER upload
+all_keys.json
+wechat_key.txt
+config.json
+decrypted/
+decoded_images/
+*.db
+*.db-shm
+*.db-wal
+*.db.tmp_monitor
+
+exports/
+wx
+
+# Hook outputs
+hook_output.txt
+hook_start_output.txt
+hook_stderr.txt
+run_hook.bat
+
+# Rust
+target/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+find_all_keys_macos
+.claude/worktrees/
+
+# 私人排版模板（build_docx.py 使用）
+docs/tutorial/书籍模版.docx
+~$*

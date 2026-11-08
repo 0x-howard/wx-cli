@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="848" height="184" viewBox="0 0 848 184">
+<rect width="100%" height="100%" rx="10" fill="#1e1e2e"/>
+<rect width="100%" height="30" rx="10" fill="#313244"/>
+<rect y="20" width="100%" height="10" fill="#313244"/>
+<circle cx="18" cy="15" r="6" fill="#f38ba8"/>
+<circle cx="38" cy="15" r="6" fill="#f9e2af"/>
+<circle cx="58" cy="15" r="6" fill="#a6e3a1"/>
+<text x="424" y="20" fill="#bac2de" font-size="13" text-anchor="middle" font-family="PingFang SC, Helvetica, sans-serif">精简导出：一条消息一行</text>
+<text x="18" y="62" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">## 2026-10-16</text>
+<text x="18" y="81" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">- 12:37 **群友A**：有耐心愿意每天花时间选岗投岗可以进…（回复 群友B: 机构说进ie要一个月 有必要等嘛）</text>
+<rect x="12" y="85" width="824" height="19" rx="3" fill="#f9e2af" fill-opacity="0.14"/>
+<text x="18" y="100" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">- 12:38 **群友C**：有点搞笑[破涕为笑]（回复 群友A: [图片]）</text>
+<text x="18" y="119" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">- 12:43 **群友A**：每个基金会选岗方式都不太相同，ie类似于国内boss直聘…</text>
+<text x="18" y="138" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">- 12:45 **群友A**：这个是基金会（回复 群友D: ie是啥意思）</text>
+<rect x="12" y="142" width="824" height="19" rx="3" fill="#f9e2af" fill-opacity="0.14"/>
+<text x="18" y="157" fill="#cdd6f4" font-size="13.5" font-family="Menlo, SF Mono, PingFang SC, monospace" xml:space="preserve">- 12:50 **群友A**：你得在Goolemap上看看周围地理位置怎么样，好不好找二工（回复 群友B: [图片]）</text>
+</svg>
